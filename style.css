@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --rosa: #f8b5da;
+    --white: #f4f4f4;
+    --lilas: #e798f1;
+    --rosinha: #f18493;
+    --vermelho: #d32f2f;
+    --vinho: #9c276c;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--rosa);
+}
+
+
+
+h1 {
+    color: var(--rosinha);
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    color: var(--white);
+}
+
+#addTaskButton {
+    background-color: var(--vinho);
+}
+
+#addTaskButton:hover {
+    background-color: var(--vinho);
+}
+
+.editButton {
+    background-color: var(--rosinha);
+}
+
+.editButton:hover {
+    background-color: var(--rosinha);
+}
+
+.deleteButton {
+    background-color: var(--vermelho);
+}
+
+.deleteButton:hover {
+    background-color: var(--vermelho);
+}
+
+.completeButton {
+    background-color: var(--lilas);
+}
+
+.completeButton:hover {
+    background-color: var(--lilas);
+}
+
+#todoList {
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--rosa);
+    border-radius: 15px;
+    width: 1000px;
+}
+
+#todoList li {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
